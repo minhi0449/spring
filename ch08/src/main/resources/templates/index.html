@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
     <!--
             날짜 : 2024.09.11
             이름 : 김민희
-            내용 : 8장
+            내용 : 8장 스프링 시큐리티 실습하기
     -->
 </head>
 <body>
-    <h4>ch08 Spring Security</h4>
+    <h4>ch08.Spring Security</h4>
 
     <h4>인증 테스트</h4>
-    <a th:href="@{/user/login}">user 로그인</a>
-    <a th:href="@{/user/login}">user 회원가입</a>
+    <th:block th:authorize="${isAnonymous}">
+        <a th:href="@{/user/login}">user 로그인</a>
+        <a th:href="@{/user/register}">user 회원가입</a>
+    </th:block>
+
+    <th:block sec:authorize="${isAuthenticated()}"> <!--로그인했을 때 -->
+        <p>
+            [[${#authentication.principal.user.name}]]<br>
+            [[${#authentication.principal.user.role}]]<br>
+        </p>
+        <a th:href="@{/user/logout}">user 로그아웃</a>
+    </th:block>
+
 
     <h4>인가 테스트</h4>
-    <a th:href="@{/admin}">admin</a>
-    <a th:href="@{/manager}">manager</a>
-    <a th:href="@{/staff}">staff</a>
+    <a th:href="@{/admin}">admin</a><br>
+    <a th:href="@{/manager}">manager</a><br>
+    <a th:href="@{/staff}">staff</a><br>
 
 </body>
 </html>

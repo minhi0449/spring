@@ -1,0 +1,58 @@
+<!DOCTYPE mapper
+
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ch05.dao.User1Mapper">
+
+    <!-- 여기서 쿼리 작성 (여기 sql 문 작성하는 곳)-->
+    <!-- id="" 안에 들어가는 거 User1Mapper 안에 -->
+    <insert id="insertUser1">
+        <!-- insert into user1 value (?,?,?,?,?); 쿼리 파라미터를 이렇게 안 씀 -->
+        insert into user1 value (#{uid}, #{name}, #{birth}, #{hp}, #{age});
+     </insert>
+
+     <select id="selectUser1" resultType="com.ch05.dto.User1DTO">
+         <!--  리턴 속성 써줘야 함-->
+         select * from user1 where uid = #{uid};
+     </select>
+
+     <select id="selectUser1s" resultType="com.ch05.dto.User1DTO">
+         <!--  리턴 속성 : List 지만 그냥 DTO 선언해주면 됨-->
+         select * from user1;
+     </select>
+
+     <update id="updateUser1">
+         update user1 set
+            name = #{name},
+            birth = #{birth},
+            hp = #{hp},
+            age = #{age}
+         where
+            uid = #{uid};
+     </update>
+
+     <delete id="deleteUser1">
+         delete form user1 where uid = #(uid);
+     </delete>
+
+ </mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

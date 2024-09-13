@@ -10,7 +10,6 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class UserDTO {
-
     private String uid;
     private String pass;
     private String name;
@@ -18,9 +17,7 @@ public class UserDTO {
     private String role;
     private String rdate;
 
-
-    // 변환 메서드
-    public static User toEntity() {
+    public User toEntity(){
         return User.builder()
                 .uid(uid)
                 .pass(pass)
@@ -29,5 +26,4 @@ public class UserDTO {
                 .role(role)
                 .build();
     }
-
 }

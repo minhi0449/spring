@@ -1,6 +1,7 @@
 package com.ch08.entity;
 
 import com.ch08.dto.UserDTO;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Entity
 @Table(name = "user")
 public class User {
     @Id

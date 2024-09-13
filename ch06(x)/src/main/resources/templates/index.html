@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--
+    날짜 : 2024.09.06 (금)
+    이름 : 김민희
+    내용 : 6장 스프링 부트 실습하기
+  -->
+</head>
+<body>
+  <h3>ch06.Spring Boot</h3>
+
+  <h4>스프링부트 기본</h4>
+  <a href="/ch06/sub1/hello">hello</a>
+  <a href="/ch06/sub1/welcome">welcome</a>
+  <a href="/ch06/sub1/greeting">greeting</a>
+
+  <h4>타임리프 출력</h4>
+  <p>[[${str1}]]</p>
+  <p th:text="${str2}">출력</p>
+
+  <h4>타임리프 조건문</h4>
+  <p>
+    <span th:if="${user1.name == '홍길동'}">user1은 홍길동 입니다.</span>
+    <span th:if="${user1.name == '김유신'}">user1은 김유신 입니다.</span>
+  </p>
+  <p>
+    <span th:if="${user1.age >= 20}">user1은 20세 이상입니다.</span>
+    <span th:unless="${user1.age >= 20}">user1은 20세 미만입니다.</span>
+  </p>
+  <p th:switch="${user2.age >= 20}">
+    <span th:case="true">user2은 20세 이상입니다.</span>
+    <span th:case="false">user2은 20세 미만입니다.</span>
+  </p>
+  <p><!-- 존재하는 user3 라서 `참` -->
+    <span th:if="${user3}">user3는 참 입니다.</span>
+    <span th:unless="${user3}">user3는 거짓 입니다.</span>
+  </p>
+  <p><!-- 존재하지 않는 user4 라서 `거짓` -->
+    <span th:if="${user4}">user4는 참 입니다.</span>
+    <span th:unless="${user4}">user4는 거짓 입니다.</span>
+  </p>
+
+  <h4>타임리프 반복문</h4>
+  <table border="1">
+          <!-- 반복변수 -->
+    <tr th:each="user:${users}">
+      <td>[[${user.uid}]]</td>
+      <td>[[${user.name}]]</td>
+      <td th:text="${user.bitrh}">생년월일</td>
+      <td th:text="${user.hp}">휴대폰</td>
+      <td th:text="${user.age}">나이</td>
+    </tr>
+  </table>
+
+  <h4>타임리프 링크</h4>
+  <a th:href="@{/sub1/hello}">hello</a>
+  <a th:href="@{/sub1/welcome}">welcome</a>
+  <a th:href="@{/sub1/greeting}">greeting</a>
+
+  <h4>타임리프 include</h4>
+  <!-- 가상 태그 : include 를 위해서 -->
+  <th:block th:include="/include/_header.html"/>
+  <th:block th:include="/include/_footer.html"/>
+
+  <div th:include="/include/_header.html"></div>
+  <div th:include="/include/_footer.html"></div>
+
+  <div th:replace="/include/_header.html"></div> <!-- div 태그 대신한다 -->
+  <div th:replace="/include/_footer.html"></div>
+
+  <th:block th:include="~{include/template::header}"/> <!-- template 참조 -->
+  <th:block th:include="~{include/template::footer}"/> <!-- th:fragment="footer" 이렇게 해서 저렇게 쓴 거임 -->
+
+  <!--
+    타임리프 레이아웃 연구하기
+  -->
+
+</body>
+</html>
