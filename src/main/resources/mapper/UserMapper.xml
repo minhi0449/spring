@@ -4,13 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.tenco.class_jwt_v01.mapper.UserMapper">
-<!--    -->
+    <!--
+            2025.02.25 (화) - UserMapper XML 설정
+            - save: 사용자 정보 저장
+            - findByUsername: username으로 사용자 조회
+            - updateRefreshToken: 리프레시 토큰 업데이트
+        -->
     <insert id="save" parameterType="com.tenco.class_jwt_v01.domain.User"><!-- User 통으로 넣기로 함 -->
+        <!-- User 객체 전체 저장 -->
         INSERT INTO users(username, password, refresh_token)
-        VALUES (#{username}, #{password}, #{refresh_token})
+        VALUES (#{username}, #{password}, #{refreshToken})
     </insert>
 
     <select id="findByUsername" resultType="com.tenco.class_jwt_v01.domain.User">
+        <!-- username으로 사용자 조회 -->
          SELECT * FROM users WHERE username = #{username}
     </select>
 
