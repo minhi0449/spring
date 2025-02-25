@@ -9,12 +9,9 @@ import org.apache.ibatis.annotations.Mapper;
     - findByUsername(): username 으로 사용자 조회
     - updateRefreshToken(): 리프레시 토큰 저장 기능 추가
  */
-
 @Mapper // 반드시 필요함 (마이바티스 사용)
 public interface UserMapper {
-
     void save(User user);
     User findByUsername(String username);
     void updateRefreshToken(User user); // 리프레시 토큰 DB 에 저장하기로 함
-
 }

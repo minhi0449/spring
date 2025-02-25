@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+
 /*
     2025.02.25 (화) -
  */
@@ -17,9 +18,12 @@ public class JWTUtil {
     @Value("${jwt.secret}")
     private String secret; // jwt1234
 
-    // 사용자 로그인 --> username, password(이 맞다면?) --> JWT 발급 (왕국 시크릿 키)
-    // 액세스 토큰 생성(10분)
-    public String generateAccessToken(String username) {
+
+    // 사용자 로그인 --> username, password (이 맞다면 ?)--> JWT 발급 (왕국 시크릿 키 발급)
+    // 엑세스 토큰 생성(10분)
+    public String generateAccessToken(String username){
+        // 로그인은 service 에서 처리할 수 있으므로,
+        // 여기서 집중할 것은 엑세스 토큰 발급을 집중할 것
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             return JWT.create()
