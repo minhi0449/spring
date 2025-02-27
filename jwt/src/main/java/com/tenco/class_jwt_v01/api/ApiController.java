@@ -14,7 +14,14 @@ import java.util.List;
 import java.util.Map;
 
 /*
-    2025.02.26 (수) -
+    2025.02.26 (수) - feat: JWT 인증 API 구현
+
+    - 회원가입 API (`POST /api/register`)
+    - 로그인 API (`POST /api/login`)
+    - 로그아웃 API (`POST /api/logout`)
+    - 액세스 토큰 갱신 API (`POST /api/refresh`)
+    - 보호된 API 예제 (`GET /api/protected`)
+    - JWT를 활용한 인증 및 토큰 검증 로직 추가
  */
 
 // API용 컨트롤러 : JSON 응답을 표준화된 ResponseAPI로 변환
