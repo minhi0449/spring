@@ -12,8 +12,8 @@
         -->
     <insert id="save" parameterType="com.tenco.class_jwt_v01.domain.User"><!-- User 통으로 넣기로 함 -->
         <!-- User 객체 전체 저장 -->
-        INSERT INTO users(username, password, refresh_token)
-        VALUES (#{username}, #{password}, #{refreshToken})
+        INSERT INTO users(username, password)
+        VALUES (#{username}, #{password})
     </insert>
 
     <select id="findByUsername" resultType="com.tenco.class_jwt_v01.domain.User">
