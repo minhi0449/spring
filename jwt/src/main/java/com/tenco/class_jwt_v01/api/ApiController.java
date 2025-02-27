@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
-    2025.02.26 (수) - API 용 컨트롤러
+    2025.02.26 (수) -
  */
 
 // API용 컨트롤러 : JSON 응답을 표준화된 ResponseAPI로 변환
