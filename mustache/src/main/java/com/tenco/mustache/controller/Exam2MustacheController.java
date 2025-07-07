@@ -83,5 +83,11 @@ public class Exam2MustacheController {
 
         return "examples/basic3";
     }
+
+    /*
+        4. 부정 섹션 ({{^key}} .. {{key}}) 학습
+        URL : http://localhost:8080/mustache/inverted-sections
+     */
+
 }
 
