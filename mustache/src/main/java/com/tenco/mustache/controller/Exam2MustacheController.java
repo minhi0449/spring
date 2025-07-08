@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /*
     Mustache 문법 학습을 위한 단계별 예제
@@ -147,6 +146,32 @@ public class Exam2MustacheController {
         model.addAttribute("mainContent", "부분 템플릿을 활용하여 재사용 가능한 컴포넌트를 만들어 보세요!");
 
         return "examples/basic6";
+    }
+
+    /*
+        7. 중첩 객체 접근 학습
+        URL: http://localhost:8080/mustache/nested-objects
+     */
+    @GetMapping("nested-objects")
+    public String nestedObjects(Model model){
+        model.addAttribute("pageTitle", "중첩 객체 접근 학습");
+
+        // 간단한 중첩 객체 구조 생성
+        Map<String, Object> user = new HashMap<>();
+        user.put("name", "이개발자");
+        user.put("email", "dev@example.com");
+
+        // 주소 정보 (2단계 중첩)
+        Map<String, Object> addr = new HashMap<>();
+        addr.put("city", "서울");
+        addr.put("street", "테헤란로 123");
+
+        // user 객체에 addr 키 값으로 addr 객체를 추가함
+        user.put("addr", addr);
+
+        model.addAttribute("user", user);
+
+        return "examples/basic7";
     }
 
 }
