@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.List;
 
 /*
     Mustache 문법 학습을 위한 단계별 예제
@@ -104,6 +106,28 @@ public class Exam2MustacheController {
         model.addAttribute("isEmpty", null);
 
         return "examples/basic4";
+    }
+
+    /*
+        5. 컬렉션 반복 처리 학습
+        URL: http://localhost:8080/mustache/collections
+     */
+    @GetMapping("/collections")
+    public String collections(Model model){
+        model.addAttribute("pageTitle", "컬렉션 반복 처리 학습");
+
+        // 단순 문자열 리스트
+        List<String> fruits = Arrays.asList("사과", "바나나", "오렌지", "포도", "딸기");
+        model.addAttribute("fruits", fruits);
+
+        // 숫자 리스트
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        model.addAttribute("numbers", numbers);
+
+        // 빈 리스트 (부정 조건 테스트용)
+        model.addAttribute("emptyList", Arrays.asList());
+
+        return "examples/basic5";
     }
 }
 
