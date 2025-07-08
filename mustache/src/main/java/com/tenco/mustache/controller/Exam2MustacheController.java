@@ -129,5 +129,25 @@ public class Exam2MustacheController {
 
         return "examples/basic5";
     }
+
+    /*
+        6. 부분 템플릿 포함 ({{> partialName}}) 학습
+        URL: http://localhost:8080/mustache/partials
+     */
+    @GetMapping("partials")
+    public String partials(Model model){
+        model.addAttribute("pageTitle", "부분 템플릿 학습");
+
+        // 부분 템플릿에서 사용한 공통 데이터
+        model.addAttribute("siteName", "Mustache 학습 사이트");
+        model.addAttribute("currentYear", "2025");
+        model.addAttribute("companyName", "코딩 교육센터");
+
+        // 메인 콘텐츠 데이터
+        model.addAttribute("mainContent", "부분 템플릿을 활용하여 재사용 가능한 컴포넌트를 만들어 보세요!");
+
+        return "examples/basic6";
+    }
+
 }
 
