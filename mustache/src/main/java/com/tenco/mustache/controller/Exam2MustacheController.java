@@ -88,6 +88,22 @@ public class Exam2MustacheController {
         4. 부정 섹션 ({{^key}} .. {{key}}) 학습
         URL : http://localhost:8080/mustache/inverted-sections
      */
+    @GetMapping("/inverted-sections")
+    public String invertedSections(Model model){
+        model.addAttribute("key", "key");
+        model.addAttribute("pageTitle", "부정 섹션 학습");
 
+        // 부정 조건 테스트용 데이터
+        model.addAttribute("errorMessage", null);   // null (부정 조건 true)
+        model.addAttribute("warningMessage", "");   // 빈 문자열 (부정 조건 true)
+        model.addAttribute("successMessage", "작업 완료"); // 값 있음 (부정 조건 false)
+
+        // 실제 사용 시나리오
+        model.addAttribute("isLoggedOut", false);
+        model.addAttribute("hasNoItems", true);
+        model.addAttribute("isEmpty", null);
+
+        return "examples/basic4";
+    }
 }
 
