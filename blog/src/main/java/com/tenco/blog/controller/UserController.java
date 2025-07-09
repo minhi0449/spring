@@ -19,6 +19,7 @@ public class UserController {
     }
 
     // 주소 설계 : http://localhost:8080/user/update-form
+    @GetMapping("/user/update-form")
     public String updateForm(){
         return "user/update-form";
     }
