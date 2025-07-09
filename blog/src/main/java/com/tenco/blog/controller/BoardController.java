@@ -1,5 +1,7 @@
 package com.tenco.blog.controller;
 
+import com.tenco.blog.repository.BoardNativeRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -7,8 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller // IoC 대상 - 싱글톤 패턴으로 관리됨
+@RequiredArgsConstructor
 public class BoardController {
 
+    private final BoardNativeRepository boardNativeRepository;
 
     @GetMapping({"/", "/index"})
     public String index(){
@@ -28,9 +32,13 @@ public class BoardController {
     public String save(@RequestParam("username") String username,
                        @RequestParam("title") String title,
                        @RequestParam("content") String content){
+
+        System.out.println("=== Controller: 폼 데이터 수신 ===");
         System.out.println("title : " + title);
         System.out.println("content : " + content);
         System.out.println("username : " + username);
+
+
         return "redirect:/";
     }
 
