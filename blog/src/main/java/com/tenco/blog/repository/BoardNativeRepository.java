@@ -2,6 +2,7 @@ package com.tenco.blog.repository;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Repository;
 
 @Repository // IoC 대상
@@ -18,6 +19,7 @@ public class BoardNativeRepository {
     }
 
     // 트랜잭션 처리
+    @Transactional
     public void save(String title, String content, String username){
         System.out.println("=== Repository: save 메서드 실행 시작 ===");
         System.out.println("전달받은 파라미터 - title: " + title + ", content: " + content + ", username: " + username);

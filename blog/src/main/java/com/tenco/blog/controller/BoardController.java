@@ -38,6 +38,7 @@ public class BoardController {
         System.out.println("content : " + content);
         System.out.println("username : " + username);
 
+        boardNativeRepository.save(title, content, username);
 
         return "redirect:/";
     }
