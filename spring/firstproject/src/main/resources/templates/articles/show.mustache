@@ -2,18 +2,21 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Title</th>
-            <th scope="col">Content</th>
-        </tr>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>제목</td>
-            <td>내용</td>
-        </tr>
+    {{#article}}
+    <tr>
+        <th>{{id}}</th>
+        <th>{{title}}</th>
+        <th>{{content}}</th>
+    </tr>
+    {{/article}}
+
     </tbody>
 </table>
 
