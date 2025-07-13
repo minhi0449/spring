@@ -48,7 +48,9 @@ public class ArticleController {
         Article saved = articleRepository.save(article); // article 엔티티를 저장해 saved 객체에 반환
         log.info(saved.toString());
         // System.out.println(saved.toString()); // article이 DB에 잘 저장되는지 확인 출력
-        return "";
+
+        // 리다이렉트를 작성할 위치 / 형식 : return "redirect:URL_주소";
+        return "redirect:/articles/" + saved.getId(); // id 값을 가져오기 위해 saved 객체 이용
     }
 
     @GetMapping("/articles/{id}")
@@ -63,7 +65,7 @@ public class ArticleController {
         model.addAttribute("article", articleEntity);
 
         // 3. 뷰 페이지 반환하기
-        return "articles/show";
+        return "articles/show"; // 목록으로 돌아가기 링크를 넣을 뷰 파일 확인
     }
 
     @GetMapping("/articles")
