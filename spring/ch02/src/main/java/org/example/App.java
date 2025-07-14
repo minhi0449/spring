@@ -4,6 +4,7 @@ import org.example.config.AppConfig;
 import org.example.sub1.Greeting;
 import org.example.sub1.Hello;
 import org.example.sub1.Welcome;
+import org.example.sub2.Computer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -40,9 +41,9 @@ public class App {
         greetingBean.show();
 
         ///////////////////////////////////////////////////////////
-
-
-
+        // IoC/DI 기법을 이용한 객체 실습
+        Computer computer = (Computer) context.getBean("com");
+        computer.show();
 
     }
 }
