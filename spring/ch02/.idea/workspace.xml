@@ -8,11 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sub2/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sub2/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sub2/Hdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sub2/Hdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sub2/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sub2/Ram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" afterDir="false" />
@@ -101,7 +96,7 @@
       <updated>1752481816068</updated>
       <workItem from="1752503545350" duration="895000" />
       <workItem from="1752504454972" duration="398000" />
-      <workItem from="1752504871533" duration="3890000" />
+      <workItem from="1752504871533" duration="4210000" />
     </task>
     <servers />
   </component>
