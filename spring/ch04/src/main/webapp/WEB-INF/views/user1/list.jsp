@@ -16,7 +16,7 @@
             <th>이름</th>
             <th>휴대폰</th>
             <th>나이</th>
-            <th>나이</th>
+            <th>관리</th>
         </tr>
         <c:forEach var="user1" items="${user1List}">
             <tr>
@@ -25,7 +25,7 @@
                 <td>${user1.hp}</td>
                 <td>${user1.age}</td>
                 <td>
-                    <a href="/ch04/user1/modify?uid={user1.uid}">수정</a>
+                    <a href="/ch04/user1/modify?uid=${user1.uid}">수정</a>
                     <a href="/ch04/user1/remove">삭제</a>
                 </td>
             </tr>
