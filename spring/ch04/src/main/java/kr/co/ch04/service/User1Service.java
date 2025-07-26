@@ -30,7 +30,7 @@ public class User1Service {
     }
 
     public void updateUser1(User1DTO dto){
-        dao.updateUser1(dao);
+        dao.updateUser1(dto);
     }
 
     public void deleteUser1(String uid){
