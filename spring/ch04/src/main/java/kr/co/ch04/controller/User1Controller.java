@@ -45,7 +45,7 @@ public class User1Controller {
         System.out.println("[controller] - list(get)");
         // 조회
         List<User1DTO> users = user1Service.selectUser1s();
-        System.out.println("[controller] users : " + users);
+        System.out.println("[controller] - users : " + users);
         model.addAttribute("users", users);
         return "/user1/list";
     }
@@ -68,6 +68,7 @@ public class User1Controller {
     @PostMapping("/user1/modify")
     public String modify(@ModelAttribute User1DTO dto){
         System.out.println("[controller] - modify(post)");
+        System.out.println("입력된 hp 값: " + dto.getHp());
         System.out.println("dto : " + dto);
         user1Service.updateUser1(dto);
         return "redirect:/user1/list"; // 앞에 WEB-INF/view 뒤에 .jsp --> 뷰 리졸버가 붙여줌

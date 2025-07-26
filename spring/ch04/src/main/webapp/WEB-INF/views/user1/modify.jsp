@@ -21,7 +21,7 @@
         </tr>
         <tr>
           <td>생년월일</td>
-          <td><input type="text" name="hp" placeholder="휴대폰 입력" value="${user1DTO.birth}"></td>
+          <td><input type="date" name="birth" placeholder="생년월일 입력" value="${user1DTO.birth}"></td>
         </tr>
         <tr>
           <td>휴대폰</td>

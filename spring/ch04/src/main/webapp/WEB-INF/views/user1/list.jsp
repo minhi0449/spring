@@ -23,6 +23,7 @@
             <tr>
                 <td>${user.uid}</td>
                 <td>${user.name}</td>
+                <td>${user.birth}</td>
                 <td>${user.hp}</td>
                 <td>${user.age}</td>
                 <td>
