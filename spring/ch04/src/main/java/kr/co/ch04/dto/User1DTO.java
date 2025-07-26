@@ -3,12 +3,14 @@ package kr.co.ch04.dto;
 public class User1DTO {
     private String uid;
     private String name;
+    private String birth;
     private String hp;
     private int age;
 
-    public User1DTO(String uid, String name, String hp, int age) {
+    public User1DTO(String uid, String name, String birth, String hp, int age) {
         this.uid = uid;
         this.name = name;
+        this.birth = birth;
         this.hp = hp;
         this.age = age;
     }
@@ -27,6 +29,14 @@ public class User1DTO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getBirth() {
+        return birth;
+    }
+
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
     public String getHp() {
@@ -50,6 +60,7 @@ public class User1DTO {
         return "User1DTO{" +
                 "uid='" + uid + '\'' +
                 ", name='" + name + '\'' +
+                ", birth='" + birth + '\'' +
                 ", hp='" + hp + '\'' +
                 ", age=" + age +
                 '}';
