@@ -10,7 +10,7 @@ public class User1DTO {
     public User1DTO() {
         // 기본 생성자 (파라미터 없는 생성자)
     }
-
+  
     public User1DTO(String uid, String name, String birth, String hp, int age) {
         this.uid = uid;
         this.name = name;
