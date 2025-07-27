@@ -14,10 +14,10 @@
       <change beforePath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ch02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" afterDir="false" />
@@ -61,6 +61,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
