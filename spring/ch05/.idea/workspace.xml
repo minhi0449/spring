@@ -10,16 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5847b6f-eba9-4dd2-b149-f4d9bdab4a86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ch07/src/main/java/com/ch07/repository/shop/impl/CustomerRepositoryCustomImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../mustache/src/main/java/com/tenco/mustache/controller/Exam2MustacheController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ch02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ch02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/user1/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/java/com/example/firstproject/entity/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../firstproject/src/main/resources/templates/members/index.mustache" afterDir="false" />
@@ -41,10 +39,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -63,34 +61,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.ch05 [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TomEE Server.ch05.executor": "Run",
-    "Tomcat Server.ch05.executor": "Run",
-    "Tomcat Server.index.jsp.executor": "Coverage",
-    "git-widget-placeholder": "ch04",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ch05 [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TomEE Server.ch05.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.ch05.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.index.jsp.executor&quot;: &quot;Coverage&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ch04&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -206,7 +204,8 @@
       <option name="presentableId" value="Default" />
       <updated>1753506221406</updated>
       <workItem from="1753506222406" duration="462000" />
-      <workItem from="1753506825975" duration="1485000" />
+      <workItem from="1753506825975" duration="2148000" />
+      <workItem from="1753582593191" duration="1537000" />
     </task>
     <servers />
   </component>
