@@ -51,7 +51,7 @@ public class CustomerRepositoryImpl implements CustomerRepositoryCustom {
                                 qCustomer.name,
                                 qCustomer.age
                         )
-                )
+                );
     }
 
 
@@ -82,7 +82,7 @@ public class CustomerRepositoryImpl implements CustomerRepositoryCustom {
         // QueryDSL 동적 쿼리 Expression 생성 
         // 이걸로 게시판 목록 검색
         BooleanExpression express = qCustomer
-                                        .name.containsIgnoreCase(keyword
+                                        .name.containsIgnoreCase(keyword)
                                         .or(qCustomer.addr.containerIgnoreCase(keyword));
 
         return queryFactory()
