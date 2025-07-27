@@ -1,5 +1,6 @@
 package com.tenco.mustache.controller;
 
+import com.fasterxml.jackson.core.ObjectCodec;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -174,5 +175,37 @@ public class Exam2MustacheController {
         return "examples/basic7";
     }
 
+    /*
+        8. 복합 데이터 구조 처리 학습
+        URL : http://localhost:8080/mustache/complex-data
+     */
+    @GetMapping("complex-data")
+    public String complexData(Model model){
+        model.addAttribute("pageTitle", "복합 데이터 구조 학습");
+
+        // 간단한 게시글 목록 (인라인으로 생성)
+        Map<String, Object> post1 = new HashMap<>();
+        post1.put("id", 1L);
+        post1.put("title", "Spring Boot 시작하기");
+        post1.put("author", "관리자");
+        post1.put("published", true);
+        post1.put("tags", Arrays.asList("Spring", "Java"));
+
+        Map<String, Object> post2 = new HashMap<>();
+        post2.put("id", 2L);
+        post2.put("title", "Mustache 학습하기");
+        post2.put("author", "개발자");
+        post2.put("published", false);
+        post2.put("tags", Arrays.asList("Template", "Frontend"));
+
+        List<Map<String, Object>> posts = Arrays.asList(post1, post2);
+        model.addAttribute("posts", posts);
+
+        // 간단한 통계
+        model.addAttribute("totalPosts", posts.size());
+        model.addAttribute("publishedCount", 1);
+
+        return "examples/basic8";
+    }
 }
 

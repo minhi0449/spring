@@ -36,7 +36,7 @@ public class MemberController {
         // 2. Repository 로 Entity 를 DB에 저장
         Member saved = memberRepository.save(member);
         log.info(saved.toString());
-        return "";
+        return "redirect:/members/" + saved.getId();
     }
 
     @GetMapping("/members/{id}")
