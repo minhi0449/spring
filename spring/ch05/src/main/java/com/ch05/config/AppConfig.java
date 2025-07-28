@@ -20,7 +20,7 @@ public class AppConfig implements WebMvcConfigurer {
 
     public void addResourceHandlers(ResourceHandlerRegistry registry){
         // 정적 리소스 자원 경로 설정
-        registry.addResourceHandler("/**").addResourceLocations("/resources");s
+        registry.addResourceHandler("/**").addResourceLocations("/resources");
     }
 
 }
