@@ -38,7 +38,7 @@ public class MybatisConfig {
         // classpath*: --> 프로젝트의 모든 클래스패스에서 찾기
         // mapper/ --> mapper 폴더 안에서
         // *.xml --> 모든 xml 파일들
-        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResource("classpath*:mapper/*.xml"));
+        sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/*.xml"));
 
         // 설정이 완료된 SqlSessionFactory 객체를 반환
         // 이제 이 Factory로 실제 데이터베이스 작업을 할 수 있는 SqlSession 을 만들 수 있음
