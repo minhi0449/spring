@@ -28,12 +28,12 @@ public class User1Controller {
     public String list(Model model){
         List<User1DTO> users = user1Service.selectUser1s();
         model.addAttribute("users", users);
-        return "/user1/list";
+        return "user1/list";
     }
 
     @GetMapping("/user1/register")
     public String register(){
-        return "/user1/register";
+        return "user1/register";
     }
 
     @PostMapping("/user1/register")
@@ -46,18 +46,18 @@ public class User1Controller {
     public String modify(@RequestParam("uid") String uid, Model model){
         User1DTO user1DTO = user1Service.selectUser1(uid);
         model.addAttribute(user1DTO);
-        return "/user1/modify";
+        return "user1/modify";
     }
 
     @PostMapping("/user1/modify")
     public String modify(User1DTO user1DTO){
         user1Service.updateUser1(user1DTO);
-        return "/user1/modify";
+        return "redirect:/user1/list";
     }
 
     @GetMapping("/user1/delete")
     public String delete(@RequestParam("uid") String uid){
         user1Service.deleteUser1(uid);
-        return "redirect:/user1/delete";
+        return "redirect:/user1/list";
     }
 }
