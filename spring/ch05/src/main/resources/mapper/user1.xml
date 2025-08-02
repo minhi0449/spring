@@ -2,7 +2,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="org.apache.ibatis.submitted.rounding.Mapper">
+<mapper namespace="com.ch05.dao.User1Mapper">
 
     <!-- 여기서 쿼리 작성 (여기 SQL 문 작성하는 곳 -->
     <!-- id="" 안에 들어가는 거 User1Mapper 안에 -->
@@ -17,7 +17,7 @@
         select * from user1 where uid = #{uid};
     </select>
 
-    <select id="selectUser1s" resultMap="com.ch05.dto.User1DTO">
+    <select id="selectUser1s" resultType="com.ch05.dto.User1DTO">
         <!-- 리턴 속성 : List 지만 그냥 DTO 선언해주면 됨 -->
         select * from user1;
     </select>
