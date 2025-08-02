@@ -15,7 +15,7 @@ public class AppConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry){
         // jsp 경로 및 확장자 설정
-        registry.jsp("/WEB-INF/views/", ".jsp");
+        registry.jsp("/WEB-INF/view/", ".jsp");
     }
 
     public void addResourceHandlers(ResourceHandlerRegistry registry){
