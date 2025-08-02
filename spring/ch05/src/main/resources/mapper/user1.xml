@@ -4,36 +4,36 @@
 
 <mapper namespace="org.apache.ibatis.submitted.rounding.Mapper">
 
-    <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap">
-        <id column="id" property="id"/>
-        <result column="name" property="name"/>
-        <result column="funkyNumber" property="funkyNumber"/>
-        <result column="roundingMode" property="roundingMode"/>
-    </resultMap>
+    <!-- 여기서 쿼리 작성 (여기 SQL 문 작성하는 곳 -->
+    <!-- id="" 안에 들어가는 거 User1Mapper 안에 -->
 
-    <select id="getUser" resultMap="usermap">
-        select * from users
-    </select>
     <insert id="insert">
-        insert into users (id, name, funkyNumber, roundingMode) values (
-        #{id}, #{name}, #{funkyNumber}, #{roundingMode}
-        )
+        <!-- insert into user1 value (?,?,?,?,?); 쿼리 파라미터를 이렇게 안 씀 -->
+        insert into user1 value (#{uid}, #{name}, #{birth}, #{hp}, #{age});
     </insert>
 
-    <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap2">
-        <id column="id" property="id"/>
-        <result column="name" property="name"/>
-        <result column="funkyNumber" property="funkyNumber"/>
-        <result column="roundingMode" property="roundingMode"
-                typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
-    </resultMap>
-    <select id="getUser2" resultMap="usermap2">
-        select * from users2
+    <select id="selectUser1" resultType="com.ch05.dto.User1DTO">
+        <!-- 리턴 속성 써줘야 함 -->
+        select * from user1 where uid = #{uid};
     </select>
-    <insert id="insert2">
-        insert into users2 (id, name, funkyNumber, roundingMode) values (
-        #{id}, #{name}, #{funkyNumber}, #{roundingMode, typeHandler=org.apache.ibatis.type.EnumTypeHandler}
-        )
-    </insert>
+
+    <select id="selectUser1s" resultMap="com.ch05.dto.User1DTO">
+        <!-- 리턴 속성 : List 지만 그냥 DTO 선언해주면 됨 -->
+        select * from user1;
+    </select>
+
+    <update id="updateUser1">
+        update user1 set
+            name = #{name},
+            birth = #{birth},
+            hp = #{hp},
+            age = #{age}
+        where
+            uid = #{uid};
+    </update>
+
+    <delete id="deleteUser1">
+        delete from user1 where uid = #{uid};
+    </delete>
 
 </mapper>
