@@ -33,7 +33,7 @@ public class User1Controller {
 
     @GetMapping("/user1/register")
     public String register(){
-        return "user1/register";
+        return "user1/list";
     }
 
     @PostMapping("/user1/register")

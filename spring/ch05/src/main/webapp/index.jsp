@@ -11,6 +11,6 @@
 </head>
 <body>
     <h3>ch05.MyBatis</h3>
-    <a href="/ch05/user1/list">user1</a>
+    <a href="/user1/list">user1</a>
 </body>
 </html>
