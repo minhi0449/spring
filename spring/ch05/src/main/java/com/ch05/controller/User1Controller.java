@@ -21,7 +21,7 @@ public class User1Controller {
         this.user1Service = user1Service;
     }
 
-    @GetMapping
+    @GetMapping("/user1/list")
     public String list(Model model){
         List<User1DTO> users = user1Service.selectUser1s();
         model.addAttribute("users", users);
