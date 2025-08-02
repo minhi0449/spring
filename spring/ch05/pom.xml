@@ -6,7 +6,9 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>ch05 Maven Webapp</name>
+  <description>Spring MVC와 MyBatis 사용한 사용자 관리 시스템</description>
   <url>http://maven.apache.org</url>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

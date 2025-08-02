@@ -5,10 +5,10 @@
 </head>
 <body>
     <h3>User1 삭제</h3>
-    <a href="/ch05"></a>
-    <a href="/ch05/user1/list">목록</a>
+    <a href="/">처음으로</a>
+    <a href="/user1/list">목록</a>
 
-    <form action="/ch05/user1/delete">
+    <form action="/user1/delete">
         <table border="1">
             <tr>
                 <td>아이디</td>
