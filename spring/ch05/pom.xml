@@ -95,7 +95,18 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.30</version>
+      <!-- provided scope : 컴파일 시점에만 필요하고 런타임에는 불필요함을 의미 -->
+      <scope>provided</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.4.14</version>
+      <scope>compile</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>ch05</finalName>

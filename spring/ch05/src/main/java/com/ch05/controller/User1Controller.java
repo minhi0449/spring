@@ -2,6 +2,7 @@ package com.ch05.controller;
 
 import com.ch05.dto.User1DTO;
 import com.ch05.service.User1Service;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+@Slf4j
 @Controller
 public class User1Controller {
 
@@ -19,6 +21,7 @@ public class User1Controller {
     @Autowired
     public User1Controller(User1Service user1Service){
         this.user1Service = user1Service;
+        log.info("User1Controller 생성자 호출됨 - 의존성 주입 완료");
     }
 
     @GetMapping("/user1/list")
